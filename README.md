@@ -12,7 +12,7 @@ Zennの記事「OpenAI APIを使わずにChatGPT風チャットを無料で実�
 ## セットアップ方法
 1. リポジトリをクローン  
    ```bash
-   git clone https://github.com/ユーザー名/my-llm-chatbot.git
+   git clone https://github.com/rui-1535/chat_LLM_0.git
    cd my-llm-chatbot
 
 2. ライブラリをインストール
@@ -25,15 +25,21 @@ pip install -r requirements.txt
 ⑵.bin or .gguf ファイル（モデル）を選んでダウンロード
 今回は、「mistral-7b-instruct-v0.1.Q4_K_M.gguf（4.37 GB）」をインストールした。
 
-⑶models フォルダに入れる
+⑶ダウンロードした、ggufファイルを、models フォルダに入れる
 
 ##  使い方
 ⑴まず、cdでコードをクローンしたフォルダのパスの所まで移動する。
 
+Windows PowerShellやコマンドプロンプトの場合
 ⑵コマンドラインで以下を実行して起動
 bash
 python main.py
-起動後、プロンプトに従って質問を入力すると、モデルが回答を返します。
+
+(2)'Linux/macOSの場合
+bash
+python3 main.py
+
+(3)起動後、プロンプトに従って質問を入力すると、モデルが回答を返します。
 
 入力の終わりは改行で区切り、複数行入力する場合はバックスラッシュ（\）やスラッシュ（/）を利用してください。
 
